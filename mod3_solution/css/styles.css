@@ -1,0 +1,123 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #A2D9CE;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #F5B7B1;
+  border-radius: 0;
+  border: 0;
+}
+.navbar-brand{
+  padding-top: 10px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #2C3E50;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+/* END HEADER */
+/*Main Page*/
+#chicken-tile, #beef-tile, #sushi-tile{
+  border: 1px solid #2C3E50;
+  background-color: #C4F95B;
+  overflow: hidden;
+  text-align: center;
+  color: #2C3E50;
+  font-family: serif;
+  font-size: 1em;
+  width: 100%;
+  height: 200px;
+  padding-left: 20px;
+  padding-right: 20px;
+ }
+
+#box1,#box2,#box{
+  height: 20px;
+  width: 100%;
+  text-align: center;
+  background-color: #C4F95B;
+  padding-bottom: 40px;
+  font-family:'Lora', serif ;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+#beef-tile,#box1{
+background-color: #F9E79F ;
+}
+
+#sushi-tile,#box2{
+background-color: #D7BDE2;
+}
+
+#subheading{
+  text-align: center;
+  color: #2C3E50 ;
+  font-family: 'Lora', serif ;
+  font-size: 25px;
+  padding :10px;
+  text-shadow: 1px 1px 1px #222;
+}
+/*End Main Page*/
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  #div3{
+  padding-top: 30px;
+ }
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+ #div1
+ {
+  padding-top: 20px;
+ }
+ #chicken-tile,#sushi-tile,#beef-tile{
+    width:100%;
+ }
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 60px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+
+  #collapsable-nav a{ /* Collapsed nav menu text */
+    font-size: 1.3em;
+  }
+  }
+  #nav-list a {
+   color: #2C3E50;
+   margin-top: 10px;
+   text-align: center;
+   text-shadow: 1px 1px 1px #222;
+  }
+  #nav-list a:hover {
+   background: #E7E7E7;
+  }
+  #div1, #div2
+  {
+  padding-top: 30px;
+  }
+  #chicken-tile,#sushi-tile,#beef-tile{
+    width:100%;
+  }
+}
